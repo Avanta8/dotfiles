@@ -37,6 +37,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Bob neovim
-if [ -d "$HOME/.local/share/neovim/bin" ]; then
-	PATH="$HOME/.local/share/neovim/bin:$PATH"
+if [ -d "$HOME/.local/share/bob/nvim-bin" ]; then
+	PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 fi
