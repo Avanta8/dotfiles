@@ -24,7 +24,7 @@ fi
 # .local/bin needs to go before rustup in PATH.
 
 # Rustup
-if [ -x "$HOME/.cargo/env" ]; then
+if [ -e "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"
 fi
 
@@ -40,4 +40,3 @@ export EDITOR="$VISUAL"
 if [ -d "$HOME/.local/share/neovim/bin" ]; then
 	PATH="$HOME/.local/share/neovim/bin:$PATH"
 fi
-
