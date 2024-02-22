@@ -90,6 +90,8 @@ exists() {
 	command -v "$1" >/dev/null 2>&1
 }
 
+export -f exists
+
 # navigation
 up() {
 	local d=""
