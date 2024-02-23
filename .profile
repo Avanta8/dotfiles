@@ -33,10 +33,15 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
 # Bob neovim
 if [ -d "$HOME/.local/share/bob/nvim-bin" ]; then
     PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+fi
+
+if command -v nvim >/dev/null 2>&1; then
+    export VISUAL=nvim
+    export EDITOR="$VISUAL"
+else
+    export VISUAL=vim
+    export EDITOR="$VISUAL"
 fi
