@@ -18,9 +18,6 @@
 
 vim.keymap.set("n", "<leader>h", "<cmd>noh<cr><esc>", { desc = "Clear hlsearch" })
 
-vim.keymap.set("n", "<leader>cl", "<cmd>Lazy<cr>", { desc = "Lazy" })
-vim.keymap.set("n", "<leader>l", "<nop>", { desc = "Lazy" })
-
 vim.keymap.set("n", "<c-_>", "gcc", { desc = "Comment line", remap = true })
 vim.keymap.set("v", "<c-_>", "gcgv", { desc = "Comment selection", remap = true })
 
