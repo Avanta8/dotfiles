@@ -126,6 +126,10 @@ if exists starship; then
     eval "$(starship init bash)"
 fi
 
+if exists zoxide; then
+    eval "$(zoxide init bash)"
+fi
+
 # https://github.com/akinomyoga/ble.sh
 if [ -f "$HOME/.local/share/blesh/ble.sh" ]; then
     source ~/.local/share/blesh/ble.sh
