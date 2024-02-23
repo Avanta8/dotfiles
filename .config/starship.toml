@@ -5,6 +5,11 @@ discharging_symbol = "⇣ "
 unknown_symbol = "❓ "
 empty_symbol = "❗ "
 
+[directory]
+truncation_length = 6
+truncate_to_repo = false
+truncation_symbol = ".../"
+
 [erlang]
 symbol = "ⓔ "
 
