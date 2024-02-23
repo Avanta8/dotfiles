@@ -1,4 +1,4 @@
-# Ny dotfiles
+# My dotfiles
 
 ## Requirements
 Ensure `git` is installed.
