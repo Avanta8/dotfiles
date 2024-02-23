@@ -5,10 +5,14 @@ if ! command -v cargo >/dev/null 2>&1; then
     exit 1
 fi
 
-cargo install zoxide --locked
+cargo install ripgrep
 cargo install bat
 cargo install exa
-cargo install ripgrep
+
+cargo install zoxide --locked
+cargo install starship --locked
+cargo install zellij --locked
+
 cargo install kondo
 cargo install tlrc
 cargo install lemmeknow
