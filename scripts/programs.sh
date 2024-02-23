@@ -6,6 +6,8 @@ run() {
 
 run blesh
 
+run node
+
 run rust
 run rust-utils
 
