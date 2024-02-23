@@ -38,6 +38,7 @@ return {
         documentation = cmp.config.window.bordered(border_opts),
       }
       opts.sources = cmp.config.sources({
+        { name = "copilot", priority = 2000 },
         { name = "nvim_lsp", priority = 1000 },
         { name = "luasnip", priority = 750 },
         { name = "buffer", priority = 500 },
