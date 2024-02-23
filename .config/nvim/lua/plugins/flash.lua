@@ -8,7 +8,7 @@ return {
         before = true,
       },
       highlight = {
-        backdrop = false,
+        -- backdrop = false,
       },
       modes = {
         search = {
@@ -16,7 +16,7 @@ return {
         },
         char = {
           -- jump_labels = true,
-          multi_line = false,
+          -- multi_line = false,
           char_actions = function(motion)
             return {
               [";"] = "right", -- set to `right` to always go right
@@ -27,7 +27,7 @@ return {
             }
           end,
           highlight = {
-            backdrop = false,
+            -- backdrop = false,
           },
         },
       },
@@ -36,8 +36,8 @@ return {
     keys = {
       { "s", mode = { "n", "x", "o" }, false },
       { "S", mode = { "n", "o", "x" }, false },
-      { "<leader>a", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      { "<leader>A", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "<leader>J", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
     },
   },
 }
