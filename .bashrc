@@ -121,10 +121,6 @@ bind 'set completion-ignore-case on'
 # source "$HOME/programming/programs/fzf-tab-completion/bash/fzf-bash-completion.sh"
 # bind -x '"\t": fzf_bash_completion'
 
-# https://ohmyposh.dev/docs/installation/prompt
-# eval "$(oh-my-posh init bash)"
-# eval "$(oh-my-posh init bash --config $HOME/.config/posh/themes/jandedobbeleer.omp.json)"
-
 # https://starship.rs/guide
 if exists starship; then
 	eval "$(starship init bash)"
@@ -145,9 +141,6 @@ fi
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# https://github.com/Canop/broot
-# source /home/harry/.config/broot/launcher/bash/br
 
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
