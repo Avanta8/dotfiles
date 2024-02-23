@@ -10,6 +10,8 @@ install() {
     done
 }
 
+sudo apt update && sudo apt upgrade
+install stow
 install build-essential cmake
 install unzip
 install python3-pip
