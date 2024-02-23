@@ -1,27 +1,27 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-	alias ls='ls --color=auto'
-	# alias dir='dir --color=auto'
-	# alias vdir='vdir --color=auto'
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    # alias dir='dir --color=auto'
+    # alias vdir='vdir --color=auto'
 
-	alias grep='grep --color=auto'
-	alias fgrep='fgrep --color=auto'
-	alias egrep='egrep --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 if exists exa; then
-	# Changing "ls" to "exa"
-	alias ls='exa'
-	alias la='exa -a'  # all files and dirs
-	alias ll='exa -al' # long format
-	alias lt='exa -T'  # tree listing
-	alias l.='exa -a | egrep "^\."'
+    # Changing "ls" to "exa"
+    alias ls='exa'
+    alias la='exa -a'  # all files and dirs
+    alias ll='exa -al' # long format
+    alias lt='exa -T'  # tree listing
+    alias l.='exa -a | egrep "^\."'
 else
-	# some more ls aliases
-	alias ll='ls -alF'
-	alias la='ls -A'
-	alias l='ls -CF'
+    # some more ls aliases
+    alias ll='ls -alF'
+    alias la='ls -A'
+    alias l='ls -CF'
 fi
 
 # create parent directories and verbose
@@ -44,10 +44,10 @@ alias python='python3'
 alias pactivate='. venv/bin/activate'
 
 if exists nvim; then
-	alias vi=nvim
-	alias vim=nvim
+    alias vi=nvim
+    alias vim=nvim
 fi
 
 if exists tldr && exists fzf; then
-	alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+    alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 fi

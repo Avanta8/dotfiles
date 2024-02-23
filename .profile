@@ -18,19 +18,19 @@
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ]; then
-	PATH="$HOME/bin:$PATH"
+    PATH="$HOME/bin:$PATH"
 fi
 
 # .local/bin needs to go before rustup in PATH.
 
 # Rustup
 if [ -e "$HOME/.cargo/env" ]; then
-	. "$HOME/.cargo/env"
+    . "$HOME/.cargo/env"
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ]; then
-	PATH="$HOME/.local/bin:$PATH"
+    PATH="$HOME/.local/bin:$PATH"
 fi
 
 export VISUAL=vim
@@ -38,5 +38,5 @@ export EDITOR="$VISUAL"
 
 # Bob neovim
 if [ -d "$HOME/.local/share/bob/nvim-bin" ]; then
-	PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+    PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 fi
