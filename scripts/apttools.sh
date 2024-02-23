@@ -11,3 +11,8 @@ install() {
 }
 
 install build-essential cmake
+install unzip
+install python3-pip
+install xsel
+install fzf
+install duf
