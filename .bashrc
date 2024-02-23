@@ -127,7 +127,7 @@ if exists starship; then
 fi
 
 if exists zoxide; then
-    eval "$(zoxide init bash)"
+    eval "$(zoxide init bash --cmd cd)"
 fi
 
 # https://github.com/akinomyoga/ble.sh
