@@ -7,10 +7,7 @@ run() {
 run blesh
 
 run rust
-
 run rust-utils
-run starship
-run bob
-run zellij
 
+run bob
 run nvim
