@@ -48,6 +48,6 @@ if exists nvim; then
 	alias vim=nvim
 fi
 
-if exists tldr; then
+if exists tldr && exists fzf; then
 	alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 fi
