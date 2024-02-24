@@ -27,7 +27,7 @@ return {
             }
           end,
           highlight = {
-            -- backdrop = false,
+            backdrop = false,
           },
         },
       },
