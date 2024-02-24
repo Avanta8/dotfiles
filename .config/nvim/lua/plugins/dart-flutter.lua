@@ -11,7 +11,8 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        dart = { "dart_format" },
+        -- dart format is really slow
+        -- dart = { "dart_format" },
       },
     },
   },
