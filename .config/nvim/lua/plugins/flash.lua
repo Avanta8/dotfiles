@@ -16,7 +16,7 @@ return {
         },
         char = {
           -- jump_labels = true,
-          -- multi_line = false,
+          multi_line = false,
           char_actions = function(motion)
             return {
               [";"] = "right", -- set to `right` to always go right
