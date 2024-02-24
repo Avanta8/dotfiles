@@ -4,8 +4,9 @@ return {
     name = "catppuccin",
     lazy = false,
     opts = {
-      flavour = "mocha",
+      -- flavour = "mocha",
       -- flavour = "latte",
+      flavour = "macchiato",
     },
   },
 }
