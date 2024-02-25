@@ -1,6 +1,9 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    keys = {
+      { "<leader><space>", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", desc = "Find buffer" },
+    },
     -- opts = {
     --   defaults = {
     --     -- prompt_prefix = " ",
