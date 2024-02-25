@@ -21,5 +21,5 @@ vim.keymap.set("n", "<leader>h", "<cmd>noh<cr><esc>", { desc = "Clear hlsearch" 
 vim.keymap.set("n", "<c-_>", "gcc", { desc = "Comment line", remap = true })
 vim.keymap.set("v", "<c-_>", "gcgv", { desc = "Comment selection", remap = true })
 
-vim.keymap.set("i", "<c-h>", "<c-w>")
+vim.keymap.set("!", "<c-h>", "<c-w>")
 vim.keymap.set("i", "<c-del>", "<space><esc>ce")
