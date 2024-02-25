@@ -22,4 +22,26 @@ return {
     --   vim.g.mkdp_browserfunc = "g:OpenBrowser"
     -- end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        marksman = {},
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        markdown = { "deno_fmt" },
+      },
+    },
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = { "marksman", "deno" },
+    },
+  },
 }
