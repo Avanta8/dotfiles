@@ -30,9 +30,9 @@ return {
       opts.preselect = cmp.PreselectMode.None
       opts.completion.completeopt = "menu,menuone,noselect"
       opts.formatting.fields = { "kind", "abbr", "menu" }
-      -- opts.experimental = {
-      --   ghost_text = false,
-      -- }
+      opts.experimental = {
+        ghost_text = false,
+      }
       opts.window = {
         completion = cmp.config.window.bordered(border_opts),
         documentation = cmp.config.window.bordered(border_opts),
