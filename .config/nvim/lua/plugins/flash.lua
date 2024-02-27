@@ -34,10 +34,10 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "s", mode = { "n", "x", "o" }, false },
-      { "S", mode = { "n", "o", "x" }, false },
-      { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      { "<leader>J", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      -- { "s", mode = { "n", "x", "o" }, false },
+      -- { "S", mode = { "n", "o", "x" }, false },
+      -- { "<leader>j", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      -- { "<leader>J", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
     },
   },
 }

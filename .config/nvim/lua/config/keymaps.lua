@@ -23,3 +23,10 @@ vim.keymap.set("v", "<c-_>", "gcgv", { desc = "Comment selection", remap = true 
 
 vim.keymap.set("!", "<c-h>", "<c-w>")
 vim.keymap.set("i", "<c-del>", "<space><esc>ce")
+
+-- Remap for visal block mode
+vim.keymap.set("n", "<leader>v", "<c-v>")
+
+-- Remap record macro to Q
+vim.keymap.set("n", "Q", "q")
+vim.keymap.set("n", "q", "<nop>")

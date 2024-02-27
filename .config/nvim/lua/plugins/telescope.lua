@@ -1,8 +1,25 @@
+local actions = require("telescope.actions")
+
 return {
   {
     "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        mappings = {
+          i = {
+            ["<Tab>"] = actions.move_selection_better,
+            ["<S-Tab>"] = actions.move_selection_worse,
+          },
+          n = {
+            ["<Tab>"] = actions.move_selection_better,
+            ["<S-Tab>"] = actions.move_selection_worse,
+          },
+        },
+      },
+    },
     keys = {
-      { "<leader><space>", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", desc = "Find buffer" },
+      -- { "<leader><space>", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", desc = "Find buffer" },
+      { "<leader><space>", "<cmd>Telescope buffers<cr>", desc = "Find buffer" },
     },
     -- opts = {
     --   defaults = {
