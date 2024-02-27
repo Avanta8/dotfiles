@@ -45,6 +45,20 @@ return {
         { name = "path", priority = 250 },
         { name = "emoji" },
       })
+      opts.sorting = {
+        priority_weight = 1.0,
+        comparators = {
+          cmp.config.compare.exact,
+          cmp.config.compare.locality,
+          cmp.config.compare.recently_used,
+          cmp.config.compare.score, -- based on :  score = score + ((#sources - (source_index - 1)) * sorting.priority_weight)
+          cmp.config.compare.offset,
+          cmp.config.compare.order,
+          cmp.config.compare.scopes, -- what?
+          cmp.config.compare.sort_text,
+          cmp.config.compare.kind,
+        },
+      }
 
       -- opts.mapping = vim.tbl_extend("force", opts.mapping, {
       opts.mapping = {
