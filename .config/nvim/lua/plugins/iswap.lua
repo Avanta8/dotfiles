@@ -3,7 +3,6 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        -- ["gs"] = { name = "+surround" },
         ["<leader>i"] = { name = "+iswap" },
       },
     },
