@@ -11,5 +11,7 @@ run node
 run rust
 run rust-utils
 
+run lazygit
+
 run bob
 run nvim
