@@ -1,4 +1,5 @@
 local actions = require("telescope.actions")
+local Util = require("lazyvim.util")
 
 return {
   {
@@ -19,7 +20,8 @@ return {
     },
     keys = {
       -- { "<leader><space>", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", desc = "Find buffer" },
-      { "<leader><space>", "<cmd>Telescope buffers<cr>", desc = "Find buffer" },
+      { "<leader><space>", "<cmd>Telescope buffers<cr>", desc = "Find Buffer" },
+      { "<leader>,", Util.telescope("files", { cwd = false }), desc = "Find Files (cwd)" },
     },
     -- opts = {
     --   defaults = {

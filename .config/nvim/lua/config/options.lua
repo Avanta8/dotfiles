@@ -6,6 +6,6 @@ vim.opt.scrolloff = 8
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
-vim.opt.conceallevel = 0
+-- vim.opt.conceallevel = 0
 
 vim.g.editorconfig = false
