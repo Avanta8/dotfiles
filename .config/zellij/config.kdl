@@ -39,8 +39,8 @@ keybinds clear-defaults=true {
 
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
 
-        bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }
-        bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        bind "e" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        bind "u" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
 
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenamePane"; PaneNameInput 0;}
@@ -140,19 +140,18 @@ keybinds clear-defaults=true {
         }
     }
     shared {
-        bind "Alt w" { ToggleFloatingPanes; }
+        bind "Alt e" { ToggleFloatingPanes; }
         bind "Alt f" { ToggleFocusFullscreen; }
     }
     shared_except "locked" {
         bind "Alt g" { SwitchToMode "Locked"; }
 
-        bind "Alt q" { Quit; }
         bind "Alt d" { Detach; }
 
         bind "Alt n" { NewPane; }
         bind "Alt ;" { NewTab; }
 
-        bind "Alt e" { TogglePaneEmbedOrFloating; }
+        bind "Alt u" { TogglePaneEmbedOrFloating; }
 
         bind "Alt h" { MoveFocus "Left"; }
         bind "Alt l" { MoveFocus "Right"; }
