@@ -12,6 +12,12 @@ git clone https://github.com/Avanta8/dotfiles.git "$HOME/dotfiles"
 cd $HOME/dotfiles
 ```
 
+Then initialise submodules.
+```
+git submodule init
+git submodule update
+```
+
 ## Install apt tools
 ```
 ./scripts/apttools.sh
