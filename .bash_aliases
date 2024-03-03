@@ -43,11 +43,6 @@ alias mysudo='sudo -E env "PATH=$PATH"'
 alias python='python3'
 alias pactivate='. venv/bin/activate'
 
-if exists nvim; then
-    alias vi=nvim
-    alias vim=nvim
-fi
-
 if exists tldr && exists fzf; then
     alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 fi
