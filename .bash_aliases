@@ -46,3 +46,7 @@ alias pactivate='. venv/bin/activate'
 if exists tldr && exists fzf; then
     alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 fi
+
+if exists lazygit; then
+    alias lg=lazygit
+fi
