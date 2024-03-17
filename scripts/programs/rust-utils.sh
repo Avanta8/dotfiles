@@ -7,7 +7,7 @@ fi
 
 cargo install ripgrep fd-find
 cargo install bat
-cargo install exa
+cargo install eza
 
 cargo install zoxide --locked
 cargo install starship --locked

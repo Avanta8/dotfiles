@@ -10,13 +10,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-if exists exa; then
-    # Changing "ls" to "exa"
-    alias ls='exa'
-    alias la='exa -a'  # all files and dirs
-    alias ll='exa -al' # long format
-    alias lt='exa -T'  # tree listing
-    alias l.='exa -a | egrep "^\."'
+if exists eza; then
+    # Changing "ls" to "eza"
+    alias ls='eza'
+    alias la='eza -a'  # all files and dirs
+    alias ll='eza -al' # long format
+    alias lt='eza -T'  # tree listing
+    alias l.='eza -a | egrep "^\."'
 else
     # some more ls aliases
     alias ll='ls -alF'

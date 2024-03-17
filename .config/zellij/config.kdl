@@ -2,7 +2,7 @@
 keybinds clear-defaults=true {
     normal {}
     locked {
-        bind "Alt g" { SwitchToMode "Normal"; }
+        bind "Alt a" { SwitchToMode "Normal"; }
     }
     resize {
         bind "Alt r" { SwitchToMode "Normal"; }
@@ -35,7 +35,7 @@ keybinds clear-defaults=true {
         bind "H" { NewPane "Left"; SwitchToMode "Normal"; }
         bind "L" { NewPane "Right"; SwitchToMode "Normal"; }
 
-        bind "x" { CloseFocus; SwitchToMode "Normal"; }
+        bind "q" { CloseFocus; SwitchToMode "Normal"; }
 
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
 
@@ -67,7 +67,7 @@ keybinds clear-defaults=true {
         bind "L" { GoToNextTab; SwitchToMode "Normal"; }
 
         bind "n" { NewTab; SwitchToMode "Normal"; }
-        bind "x" { CloseTab; SwitchToMode "Normal"; }
+        bind "q" { CloseTab; SwitchToMode "Normal"; }
 
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
 
@@ -144,7 +144,7 @@ keybinds clear-defaults=true {
         bind "Alt f" { ToggleFocusFullscreen; }
     }
     shared_except "locked" {
-        bind "Alt g" { SwitchToMode "Locked"; }
+        bind "Alt a" { SwitchToMode "Locked"; }
 
         bind "Alt d" { Detach; }
 
@@ -166,7 +166,7 @@ keybinds clear-defaults=true {
         bind "Alt ," { PreviousSwapLayout; }
         bind "Alt ." { NextSwapLayout; }
 
-        bind "Alt x" { CloseFocus; }
+        bind "Alt q" { CloseFocus; }
 
         bind "Alt 1" { GoToTab 1; SwitchToMode "Normal"; }
         bind "Alt 2" { GoToTab 2; SwitchToMode "Normal"; }
