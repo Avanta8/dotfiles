@@ -11,6 +11,7 @@ install() {
 }
 
 sudo apt update && sudo apt upgrade
+
 install stow
 install build-essential cmake
 install unzip
@@ -18,3 +19,4 @@ install python3-pip
 install xsel
 install fzf
 install duf ncdu
+install jq
