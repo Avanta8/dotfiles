@@ -1,10 +1,11 @@
 # My dotfiles
 
 ## Requirements
+
 Ensure `git` is installed.
 
-
 ## Installation
+
 First, clone to `$HOME` directory and `cd` into it.
 
 ```
@@ -13,39 +14,43 @@ cd $HOME/dotfiles
 ```
 
 Then initialise submodules.
+
 ```
 git submodule init
 git submodule update
 ```
 
 ## Install apt tools
+
 ```
 ./scripts/apttools.sh
 ```
 
 ## Symlink using `stow`
+
 This is a hack to get `stow` to remove existing files in the `$HOME` directory.
 Use at own risk!
+
 ```
-stow . --adopt
+stow . --adopt --no-folding
 git reset --hard
-stow .
+stow . --no-folding
 ```
 
 ## Programs
+
 Programs can be installed by
+
 ```
 ./scripts/programs.sh
 ```
 
 Now you are finished!
 
-
 ## Selectively install programs
+
 Programs can also be selectively installed. For example
 
 ```
 ./scripts/programs/blesh.sh
-
 ```
-
