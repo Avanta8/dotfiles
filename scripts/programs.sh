@@ -14,7 +14,7 @@ run rust-utils
 
 run lazygit
 
-rust pyenv
+run pyenv
 
 run bob
 run nvim
