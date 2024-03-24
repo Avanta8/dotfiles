@@ -7,14 +7,13 @@ run() {
 
 run blesh
 
+run lazygit
+
 run node
+run pyenv
 
 run rust
 run rust-utils
-
-run lazygit
-
-run pyenv
 
 run bob
 run nvim
