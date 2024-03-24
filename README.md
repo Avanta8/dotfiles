@@ -32,9 +32,10 @@ This is a hack to get `stow` to remove existing files in the `$HOME` directory.
 Use at own risk!
 
 ```
-stow . --adopt --no-folding
+mkdir ~/.config
+stow . --adopt
 git reset --hard
-stow . --no-folding
+stow .
 ```
 
 ## Programs
