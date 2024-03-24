@@ -136,10 +136,11 @@ if [ -f "$HOME/.local/share/blesh/ble.sh" ]; then
 fi
 
 # https://github.com/pyenv/pyenv-installer
-# export PYENV_ROOT="$HOME/.pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-## eval "$(pyenv virtualenv-init -)"
+if [ -d "$HOME/.pyenv/bin" ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi
 
 if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
