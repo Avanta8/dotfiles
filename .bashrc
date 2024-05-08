@@ -118,6 +118,11 @@ bind '"\e[Z":menu-complete-backward'
 bind 'TAB:menu-complete'
 bind 'set completion-ignore-case on'
 
+# https://github.com/akinomyoga/ble.sh
+if [ -f "$HOME/.local/share/blesh/ble.sh" ]; then
+    source ~/.local/share/blesh/ble.sh
+fi
+
 # source "$HOME/programming/programs/fzf-tab-completion/bash/fzf-bash-completion.sh"
 # bind -x '"\t": fzf_bash_completion'
 
@@ -130,9 +135,9 @@ if exists zoxide; then
     eval "$(zoxide init bash --cmd cd)"
 fi
 
-# https://github.com/akinomyoga/ble.sh
-if [ -f "$HOME/.local/share/blesh/ble.sh" ]; then
-    source ~/.local/share/blesh/ble.sh
+if exists fzf; then
+    # Use ctrl-e to open in editor
+    export FZF_DEFAULT_OPTS="--bind 'ctrl-e:execute(echo {+} | xargs -o \$EDITOR)'"
 fi
 
 # https://github.com/pyenv/pyenv-installer
@@ -151,3 +156,5 @@ fi
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# eval "$(thefuck --alias)"
