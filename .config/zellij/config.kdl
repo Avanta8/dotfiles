@@ -153,8 +153,8 @@ keybinds clear-defaults=true {
         bind "Alt l" { MoveFocus "Right"; }
         bind "Alt j" { MoveFocus "Down"; }
         bind "Alt k" { MoveFocus "Up"; }
-        bind "Alt H" { GoToPreviousTab; }
-        bind "Alt L" { GoToNextTab; }
+        bind "Alt [" { GoToPreviousTab; }
+        bind "Alt ]" { GoToNextTab; }
 
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
