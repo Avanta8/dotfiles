@@ -67,7 +67,7 @@ keybinds clear-defaults=true {
         bind "H" { MoveTab "Left"; }
         bind "L" { MoveTab "Right"; }
 
-        bind "n" { NewTab; SwitchToMode "Normal"; }
+        bind "n" { NewTab { cwd "~"; }; SwitchToMode "Normal"; }
         bind "q" { CloseTab; SwitchToMode "Normal"; }
 
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
@@ -145,7 +145,7 @@ keybinds clear-defaults=true {
         bind "Alt d" { Detach; }
 
         bind "Alt n" { NewPane; }
-        bind "Alt ;" { NewTab; }
+        bind "Alt ;" { NewTab { cwd "~"; }; }
 
         bind "Alt u" { TogglePaneEmbedOrFloating; }
 
