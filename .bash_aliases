@@ -50,3 +50,5 @@ fi
 if exists lazygit; then
     alias lg=lazygit
 fi
+
+alias nvim="TERM=tmux-256color nvim"
