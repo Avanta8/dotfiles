@@ -140,13 +140,6 @@ if exists fzf; then
     export FZF_DEFAULT_OPTS="--bind 'ctrl-e:execute(echo {+} | xargs -o \$EDITOR)'"
 fi
 
-# https://github.com/pyenv/pyenv-installer
-if [ -d "$HOME/.pyenv/bin" ]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
-fi
-
 if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -158,3 +151,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # eval "$(thefuck --alias)"
+
+if exists uv; then
+    eval "$(uv generate-shell-completion bash)"
+    eval "$(uvx --generate-shell-completion bash)"
+fi
